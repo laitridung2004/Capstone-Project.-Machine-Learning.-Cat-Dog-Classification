@@ -1,0 +1,74 @@
+# UTILITIES
+1. Referring to our git clone link: `git clone https://github.com/Dinhhoanghm/ml-project.git`
+2. Referring to our libraries used: `pip install -q -r requirements.txt`
+3. Referring to running our project: `classification_app.ipynb`
+
+# OPERATING
+This is our project structure:
+
+![alt text](image.png)
+
+The index standing before the folder name represents its order in our pipeline. The only folder that you need to examine our application is the GUI folder where we put our app interface inside called "classification_app.ipynb" that could show you the interface of our cat - dog classification project.
+![alt text](image-1.png)
+
+Before demoing our project, you would have to remember some of this requirements.
+
+## 1. Changing path in the GUI Code
+As we use Google Drive, specificially Google Collab as our mutual workspace, the path linked to folders and files in our project would be different from your folder downloaded, so make sure you changed all the path into the correct one for activating.
+![alt text](image-4.png)
+
+*Note: If you have already installed scikit-learn library, make sure it is installed in 1.2.2 version which is Google Collab's version. 
+
+We deeply recommend you using Google Collab to run our file by uploading all the file into a Drive folder so you do not have to change the path since that's how we cooperate in our project. The downloaded version in MS Teams is allocated into different folder for you to read. In case you want to upload all the file into Google Drive without any relocate file, please direct to the git clone that we put in the beginning, which is https://github.com/Dinhhoanghm/ml-project.git, you could directly download all the folder here (we allocate only the GUI file and the trained models only) then put them into your Drive to run.
+
+*Note: As our full folder account for nearly 13GB due to the dataset, our file pushed in git only contain required file for you to run so that it would not take much space in your drive. In case you want to test it carefully or your drive is available, we recommend you push our whole project.
+
+## 2. Operating our application
+When you successfully open our application to classify cat and dog, the interface would present like this:
+
+![alt text](image-2.png)
+
+You could change the model you want to examine in the "Select Model" in the upside left, but everytime you change the model, you would have to upload your image again then classify them.
+
+That's all of our guiding for you to operate our application. In case you want to deeply understand our project without spending hours reading the code, I will show you thoroughly what's inside our folder.
+
+## 3. Our folder structure
+
+![alt text](image.png)
+
+### 3.1. Data
+
+![alt text](image-5.png)
+
+There are two zip file in this folder, one named "data" and the other is "data_folder". The former, "data" is the original dataset in which we download from kaggle and the latter, "data_folder" is our dataset after augmented, which is used to train our models.
+
+### 3.2. Data preprocessing
+
+![alt text](image-7.png)
+
+We have three ipynb files in this folder which are labelled as the work order. The "data_preprocessing" file is used to visualize the data and apply some techniques so that we could get to know our dataset better. The second file "error_analyse" is when we try putting our dataset into a pre-trained model to see how it work, and more importantly, see the error related to models and dataset. Error related to dataset such as the model could not recognize picture where the subject is too small will be solved in the third file "data_augmentation" by zoom our all the dataset in a specific scale. For the error related to model, we will categorize them and avoid them in models that we would build later.
+
+### 3.3. Machine Learning models
+
+![alt text](image-8.png)
+
+There is only one ipynb file in which we would operate three models at the same time in this code. Our model will be saved in file formated "PKL". Our application would recognize this file in "model path" as our model to run.
+
+### 3.4. Deep Learning models
+
+![alt text](image-9.png)
+
+In our process, we work with ANN model and CNN model separately so there structure is a little different. After training process, both ANN model and CNN model will return a file formated "h5" which you will use to operate our application.
+
+![alt text](image-10.png)
+
+![alt text](image-11.png)
+
+### 3.5. Transfer Learning models
+
+![alt text](image-12.png)
+
+We put three pre-trained model VGG19, InceptionV3 and Xception together in a file named "transfer learning_models.ipynb" for faster and consistent coding. After our training process, they would return you with each model in two files formated "h5" and "pkl". The "h5" file will be the material you need operating our application.
+
+# THANK YOU
+That's all about our project description. Thank you so much for spending your time in our project. We are really appriciate your efforts and what you have done so far. Hope you all the best. Thank you!!!
