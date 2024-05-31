@@ -21,9 +21,11 @@ As we use Google Drive, specificially Google Collab as our mutual workspace, the
 
 *Note: If you have already installed scikit-learn library, make sure it is installed in 1.2.2 version which is Google Collab's version. 
 
-We deeply recommend you using Google Collab to run our file by uploading all the file into a Drive folder so you do not have to change the path since that's how we cooperate in our project. The downloaded version in MS Teams is allocated into different folder for you to read. In case you want to upload all the file into Google Drive without any relocate file, please direct to the git clone that we put in the beginning, which is https://github.com/Dinhhoanghm/ml-project.git, you could directly download all the folder here (we allocate only the GUI file and the trained models only) then put them into your Drive to run.
+We deeply recommend you using Google Collab to run our file by uploading all the file into a Drive folder so you do not have to change the path since that's how we cooperate in our project. The downloaded version in MS Teams is allocated into different folder for you to read. In case you want to upload all the file into Google Drive without any relocating step, please direct to the git clone that we put in the beginning and direct to the branch: "Required-Download", which is https://github.com/Dinhhoanghm/ml-project/tree/Required-Download, you could directly download all the folder here (we allocate only the GUI file and the trained models only) then put them into your Drive to run.
 
-*Note: As our full folder account for nearly 13GB due to the dataset, our file pushed in git only contain required file for you to run so that it would not take much space in your drive. In case you want to test it carefully or your drive is available, we recommend you push our whole project.
+![image](https://github.com/thocon00015/Capstone-Project.-Machine-Learning.-Cat-Dog-Classification/assets/102193912/13901b2d-4bf5-4cd7-8991-72ada5e96ecf)
+
+*Note: The branch "Required-Download" is created so that you could immediately operate our application. If you want to visit our full project, please visit the branch "Complete-Project". Remember that our dataset accounts for more than 12GB, in case you want to upload our whole project into Google Drive, make sure your disk is available. If not, approaching "Required_Download" then upload these file into Google Drive and run them with Google Collab is still our recommendation.
 
 ## 2. Operating our application
 When you successfully open our application to classify cat and dog, the interface would present like this:
